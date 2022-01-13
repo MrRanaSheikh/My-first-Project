@@ -4,7 +4,8 @@
 body{
     margin: 0%;
     padding: 0%;
-    background-color: #0F112E;   
+    background-color: #0F112E;
+    font-family: 'El Messiri', sans-serif;   
 }
 /*---nav-bar start from here--*/
 .nav-bar{
@@ -41,9 +42,9 @@ body{
     text-decoration: none;
     color: white;
     font-size: 20px;
-    font-family: 'Marmelad', sans-serif;
-    padding: 10px;
-    margin: 8px;
+    /*padding: 10px;*/
+    margin: 18px;
+    transition: font-weight 1s;
 }
 .nav-menu a:hover{
     font-weight: bold;
@@ -51,7 +52,6 @@ body{
 
 p{
     color: #f7efec8e;
-    font-family: 'Marmelad', sans-serif;
     line-height: 26px;
 }
 .home-section{
@@ -71,8 +71,8 @@ p{
     border-radius: 10px;
 }
 .home-section-box1 h1{
-    font-size: 54px;
-    font-family: 'Merienda One', cursive;
+    font-size: 60px;
+    line-height: 78px;
     color: white;
     padding-left: 10px;
     display: inline-block;
@@ -82,15 +82,35 @@ p{
     color: tomato;
 }
 .bttn{
-    padding: 12px 22px;
-    margin: 6px 0 15px 0;
-    font-family: 'Marmelad', sans-serif;
+    padding: 10px 20px;
+    margin: 6px 0 20px 0;
+    font-family: 'Zen Antique Soft', serif;
+    color: white;
     background-color: tomato;
-    border: none;
+    font-size: 15px;
+    border: 1px solid tomato;
     border-radius: 7px;
-    font-weight: bold;
-
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    
 }
+.bttn::before{
+    content: '';
+    width: 100%;
+    height: 0%;
+    background-color: #0F112E;
+    border-radius: 40%;
+    position: absolute;
+    top: -50%;
+    left: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+.bttn:hover::before{
+    height: 150%;
+}
+
 .home-section-box2{
     width: 50%;
     padding: 6% 10% 0 0;
