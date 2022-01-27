@@ -120,3 +120,18 @@ p{
     height: 380px;
     margin-left: 135px;
 }
+
+
+
+/*----footer start from here-------*/
+.footer-div{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
